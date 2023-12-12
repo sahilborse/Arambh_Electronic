@@ -1,0 +1,167 @@
+/* 
+body
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+}*/
+.main
+{   
+    /* border: 5px solid black; */
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: center; 
+    /* remove this after developing */
+    align-items: center;
+}
+
+.card
+{   display: inline-block;
+    /* border: 2px solid black; */
+    height: 280px;
+    width: 200px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px;
+}
+
+.img img
+{
+    display: inline-block;
+    height: 180px;
+    width:180px;
+    padding: 10px 0 0 0;
+    /* margin-left: 10px; */
+    /* border: 5px solid black; */
+    border-radius: 40%;
+}
+/* .name{
+    border: 5px solid black;
+    margin-top: 50px;} */
+.name>h3
+{  
+    text-align: center;
+    margin-top: 80px;
+}
+
+.info>p
+{   
+    top: 10px;
+    text-align:center ;
+}
+
+
+/* .............................for rotation of cards ............................*/
+.card {
+    perspective: 1000px;
+    width: 200px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card-back {
+    background-color: #98b1cc;
+    transform: rotateY(180deg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+
+/* .....................................for buttons.............................. */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.button {
+    background-color: #e8e0e0;
+    color: #27091b;
+    /* border: 1px solid black; */
+    padding:5px; /* Increase button padding to fit the icon */
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, margin 0.2s;
+    margin-left: 5px;
+    width: 40px; /* Set a fixed width for the button */
+    height: 40px; /* Set a fixed height for the button */
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.button i {
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: #2978b9;
+}
+
+
+
+/* responsive */
+/* .card {
+    display: inline-block;
+    width: 45%; /* Adjust the width as per your design */
+    /* margin: 10px; }*/
+ 
+
+/* Media query for screens less than 400px */
+@media screen and (max-width: 770px) {
+    .card {
+        width: 90%; /* Full width for each card */
+        /* margin: 10px 0; Adjust the margin as per your design */
+        padding: 5% 5% 0 0;
+        margin-left: 5%;
+    }
+    .main
+    {
+        display: inline-block;
+        /* flex-direction: row; */
+    }
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="cards.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="home"></div>
+<br><br><br><br>
+    <div class="header">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <div class="small_logo_div">
+
+            </div>
+            <label class="logo">
+
+              Team Arambh Electronica
+            </label>
+            <!-- <img src="img_big_logo.png" id="nav_logo" > -->
+            <img src="img_small_logo.png" id="nav_logo" > 
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#gallary">Gallary</a></li>
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="logo_moto_outer_div">
+        <div class="img_logo">
+            <img id="big_logo" src="Logo.svg">
+        </div>
+        <div class="moto_text">
+            <h1>Racing with Heart and Soul</h1>
+            <!-- <h5>Excellence in motion</h5> -->
+            <br><br>
+            <h5><span class="auto-type"></span></h5>     
+        </div>
+    </div>
+    <div id="gallary"></div>
+<br><br><br><br>
+    <div class="slideshow-container" id="gallary">
+        <div class="mySlides fade">
+            <div class="numbertext"> 1/3</div>
+            <img src="../imagetest/flower1.jpeg" style="width: 100%;">
+            <div class="text"> caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext"> 2/3</div>
+            <img src="../imagetest/flower1.jpeg" style="width: 100%;">
+            <div class="text"> caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext"> 3/3</div>
+            <img src="../imagetest/flower1.jpeg" style="width: 100%;">
+            <div class="text"> caption Text</div>
+        </div>
+       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <span class="dot " onclick="currentSlides(1)"></span>
+        <span class="dot" onclick="currentSlides(2)"></span>
+        <span class="dot" onclick="currentSlides(3)"></span>
+        
+    </div>
+   
+    <div id="about_us"></div>
+    <br><br><br><br>
+    <div>
+
+        <h1 style="text-align: center;">About Us</h1>
+        <br><br>
+    </div>
+      <!--.............................about first  .....................-->
+    <div class="about_outer_container">
+        <div class="m1 about_img_div_1">
+            <img class="about_img_1" src="teamMember.jpg" style="width:100%;">
+        </div>
+
+        <div class="m1 about_text_1">
+            <br>
+            <h1 style="text-align: center;">Team Vision </h1>
+            <br><br>
+           <span class="about_sub_text"> “To be pioneers in electric F1 prototype car engineering, pushing the boundaries of performance and sustainability. Our vision is to create cutting-edge, electric racing machines that lead the way in the world of motorsport, demonstrating the future of high-speed, eco-friendly racing technology through innovation, expertise, and passion.”</span>
+        </div>
+    </div>
+      <!--.............................about second  .....................-->
+    <div class="about_outer_container flip_div">
+        <div class="about_text_1">
+            <br>
+            <h1 style="text-align: center;">Team goals ​ </h1>
+            <br><br>
+           <span class="about_sub_text">  Prototype Excellence: Build a series of high-performance electric F1 prototypes that demonstrate technical prowess and innovation.​
+            ​<br>
+             Sustainability Leadership: Strive to be a leader in sustainable racing by optimizing energy efficiency and promoting eco-friendly practices.​
+            ​​<br>
+             Technical Innovation: Continuously innovate and develop cutting-edge technologies that can be applied in both racing and everyday electric vehicles.​</span>
+        </div>
+        <div class="about_img_div_1">
+            <img class="about_img_1" src="data:image/jpeg;base64,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" style="width:100%;">
+        </div>
+    </div>
+      <!--.............................about second  .....................-->
+    <div class="about_outer_container">
+        <div class="about_img_div_1">
+            <img class="about_img_1" src="data:image/jpeg;base64,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" style="width:100%;">
+        </div>
+        <div class="about_text_1">
+            <br>
+            <h1 style="text-align: center;">Competition details ​ </h1>
+            <br><br>
+           <span class="about_sub_text"> Name of competition –formula Bharat​
+            <br>
+            Formula Bharat is hosted by Curiosum Tech Private limited​
+            <br>
+            Competition official website-https://www.formulabharat.com/​</span>
+        </div>
+    </div>
+   
+    <div>
+        <br>
+        <h1 style="text-align: center;">Our Team Members</h1>
+        <br>
+    </div>
+    <div class="main">
+        <!--............................. card 1 .....................-->
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="img"><img src="./images/PERSON 1.png" alt="Person 1"></div>
+                
+              </div>
+              <div class="card-back">
+                <div class="name"><h3>KADAM ADITYA PRATAP</h3></div>
+                <div class="info"><p>Vice CAPTAIN</p></div>
+                <div class="buttons">
+                    <a href="#" class="button">
+                        <img src="./social media/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+          
+<!--...................... card 2 ...................................-->
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="img"><img src="./images/PERSON 1.png" alt="Person 1"></div>
+                
+              </div>
+              <div class="card-back">
+                <div class="name"><h3>ANUJA HATTE </h3></div>
+                <div class="info"><p>Captain</p></div>
+                <div class="buttons">
+                    <a href="#" class="button">
+                        <img src="./social media/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--....................... card 3 ...........................-->
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="img"><img src="./images/PERSON 1.png" alt="Person 1"></div>
+                
+              </div>
+              <div class="card-back">
+                <div class="name"><h3>Komal sunil bhalerao</h3></div>
+                <div class="info"><p>Technical team member</p></div>
+                <div class="buttons">
+                    <a href="#" class="button">
+                        <img src="./social media/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ......................card 4 .................... -->
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="img"><img src="./images/PERSON 1.png" alt="Person 1"></div>
+                
+              </div>
+              <div class="card-back">
+                <div class="name"><h3>Amol  Bhagan </h3></div>
+                <div class="info"><p>Technical team member</p></div>
+                <div class="buttons">
+                    <a href="#" class="button">
+                        <img src="./social media/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- .........................card 5................... -->
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="img"><img src="./images/PERSON 1.png" alt="Person 1"></div>
+                
+              </div>
+              <div class="card-back">
+                <div class="name"><h3>Bhanage Abhijeet Vilas</h3></div>
+                <div class="info"><p>Technical team member</p></div>
+                <div class="buttons">
+                    <a href="#" class="button">
+                        <img src="./social media/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="#" class="button">
+                        <img src="./social media/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    
+                </div>
+                <!-- ...........................card6................................. -->
+                <!-- <div class="card-back">
+                    <div class="name"><h3>Bhanage Abhijeet Vilas</h3></div>
+                    <div class="info"><p>Technical team member</p></div>
+                    <div class="buttons">
+                        <a href="#" class="button">
+                            <img src="./social media/instagram.svg" alt="instagram">
+                        </a>
+                        <a href="#" class="button">
+                            <img src="./social media/linkedin.svg" alt="linkedin">
+                        </a>
+                        <a href="#" class="button">
+                            <img src="./social media/whatsapp.svg" alt="whatsapp">
+                        </a>
+                        
+                    </div>
+                      ...........................card7................................. 
+                    <div class="card-back">
+                        <div class="name"><h3>Bhanage Abhijeet Vilas</h3></div>
+                        <div class="info"><p>Technical team member</p></div>
+                        <div class="buttons">
+                            <a href="#" class="button">
+                                <img src="./social media/instagram.svg" alt="instagram">
+                            </a>
+                            <a href="#" class="button">
+                                <img src="./social media/linkedin.svg" alt="linkedin">
+                            </a>
+                            <a href="#" class="button">
+                                <img src="./social media/whatsapp.svg" alt="whatsapp">
+                            </a>
+                            
+                    </div> -->
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <br>
+    <br>
+    <!-- header footer and contact section and events  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <!-- Carousel code goes here -->
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div id="events"></div>
+        <br><br><br><br>
+
+        <div class="row">
+            <div class="col-sm-2 col-sm-2"></div>
+            <div class="col-sm-8 col-sm-8" style="text-align:center;">
+                <h1>Events</h1>
+            </div>
+            <div class="col-sm-2 col-sm-2"></div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-6 col-sm-12">
+                <table class="table">
+                    <tr>
+                        <th><b>Ekarta Events</b></th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">All India Racing Championship</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Indian Karting Championship</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-6 col-sm-12">
+                <table  class="table" >
+                    <tr>
+                        <th><b>Faang Competition</b></th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Hackathons</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">GSOC</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div id="contact"></div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2 col-sm-2"></div>
+            <div class="col-sm-4 col-sm-8" style="padding-top: 50px;">
+                <center>
+                    <h1>Contact Us</h1>
+                </center>
+            </div>
+            <div class="col-sm-6 col-sm-12"></div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-12">
+                <table class="table">
+                    <tr>
+                        <td><img src="contact_img/googlemap.jpeg" alt="image not display" style="height: 20px; width: 20px;"></td>
+                        <td>Government College Of Engineering and Research Avasari Khurd, Taluka-Ambegaon, Maharastra
+                            412405</td>
+                    </tr>
+                    <tr>
+                        <td><img src="contact_img/message.png" alt="image not display" style="height: 20px; width: 20px;"></td>
+                        <td>9834054254</td>
+                    </tr>
+                    <tr>
+                        <td><img src="contact_img/email.png" alt="image not display" style="height: 20px; width: 20px;"></td>
+                        <td><span>Leader Email</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="contact_img/facebook.png" alt="image not display" style="height: 20px; width: 20px;"></td>
+                        <td><img src="contact_img/insta.jpeg" alt="image not display" style="height: 20px; width: 20px;"></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="col-sm-6 col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form action="your_server_endpoint.php" method="post">
+                            <table class="table">
+                                <tr>
+                                    <td><input type="text" placeholder="Your Name" name="name1"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Email Address" name="email1"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Phone Number" name="phone1"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Subject" name="subject1"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Your message..." name="message1" style="height:50px; width:50%;"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="submit" value="SUBMIT" class="btn btn-success"></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+       <div class="footer">
+       <center><span>Copyright @2023 All rights reserved | Team ERC Technology</span></center> 
+       </div>
+            
+    </div>
+
+
+    <script src="slider.js"></script>
+
+    <!-- typing-text -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed=new Typed(".auto-type",{
+            strings:["Excellence in motion",
+            "One Man, One Engine",
+            "Speed with Precision",
+            "Every Second Counts"],
+            typeSpeed:150,
+            backSpeed:50,
+            loop:true
+        })
+    </script>
+
+</body>
+
+</html>
